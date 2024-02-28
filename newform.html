@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport
+content="width=device-width, initial-scale=1.0">
 <title>Formulario</title>
-
-<link rel=" stylesheet" type="text/
-css" href="https://irisuca.github.i0/UCA/css/forms.css"/>
-  </head>
-<body bgcolor="#FFD1DC">
-<h1>segundo formulario</h1>
-<h4>el formulario esta diseñado unicamente para fines informativos sobre la situacion laboral de los ciudadanos </
-h4>
+<link rel="stylesheet" type="text/css"
+href="https://irisuca.github.io/UCA/css/forms css"/>
+</head>
+<body>
+<h1>Formulario</h1>
+<h4>Favor de llenar el formulario</h4>
 <form>
-
 <ul>
 <li>
-<label for="laboral">situacion laboral:</
-label>
-<input type="text" id="laboral
-
-name="user_laboral" />
-        </li>
-        <li>
-            <label for="money">ganancia mensual :</label>
-            <input type="float" id="money" name="user_money" />
-        </li>
-        <li>
-            <label for="check">has cambiado de situacion laboral ennlos proximos 30 dias ?:</label>
-            <input type="checkbox" id="check" name="opcion 1 " value="opcion 1"><p>SI</p><br>
-            <input type="checkbox" id="check" name="opcion 2 " value="opcion 2"><p>No</p><br>
-            <input type="checkbox" id="check" name="opcion 3 " value="opcion 3"><p>No recuerdo</p><br>
-        </li>
-        <li class="button">
-            <button type="submit">Envie su mensaje</button>
-        </li>
-    </ul>
-<li> 
-            <label for="mail">Correo Electronico:</label>
-            <input type="email" id="mail" name="user_mail" />
-        </li>
-        <div id ="datos mostrados"></div>
-        <script>
-            function mostrarDatos() {
-                var form=document.getElementById("myForm");
-                var formData = new FormData(form);
-                var resultadosDiv =document.getElementById("resultados");
-                var resultadosHTML  = 
-            }
-        </script>
-    </form>
-  <h4> Gracias por tu participación </h4>
-<h5> Favor de ingresar un correo habilidado para saber mas sobre su informacion ingresada. Para más información comunicarse al número 5501023783 y se le comunicara con una asesor para solucionar cualquier duda. <h5>
-  
-
+<label for="name" >Nombre:</label>
+<input type="text" id="name"name="user name"/>
+</li>
+<li>
+<label for="mail">Correo Electrónico:     </label>
+<input type="email" id="mail"
+name="user_mail"/>
+</li>
+<li>
+<label for="msg" >Mensaje:< /labelx
+<textarea id="msg
+name="user_msg"></textarea>
+</li>
+<li>
+<label for="check">Check;</label>
+<input type="checkbox" id="opcion1"
+name="opcion1" value="opcion 1">  <p>Opcion 1</p><br>
+<input type="checkbox" id="opcion2"
+name="opcion2" value="opcion 2"><p>Opcion 2</p><br>
+<input type="checkbox" id="opcion3"
+name="opcion3" value="opcion 3"><p>Opcion 3"</p><br>
+</li>
+<li class="button">
+<button type="button" id="mostrarDatosBtn">Mostrar Datos</button>
+</li>
+</ul>
+</form>
+<div lang="en" class="div-footer">
+<p>Thank you</p>
+<p>Bye</p>
+</div>
+<h4>Gracias por tu participación</h4>
+<div id="datosMostrados" ></div>
+<script>
+document,getElementīyId("mostrarDatosBtn').a
+ddEventListener('click', Aunction()ﺁ
+// Obtener los valores de los campos del
+formulario
+var nombre=
+document.getēlementById('name').value;
+var correo =
+document.getElementīyId("mail').value;
+var mensaje =
+document.getElementById("msg").value;
+var opcionesSeleccionadas =[];
+var checkboxes =
+document.query SelectorAll(' input[type=checkbox
+J:checked');
+// Obtener las opciones seleccionadas
+checkboxes, forEach(function(checkbox)
+PA
+opcionesSeleccionadas.push(checkbox,value);
+});
+// Mostrar los datos en el div
+var datosMostrados = "<p>Nombre:" +
+nombre +"</p><p>Correo: " + correo +"</
+p><p>Mensaje: " t mensaje +"</p><p>Opciones:
++ opcionesSeleccionadas.join(', ')+"</p>";
+document.getElementīyId("datosMostrados').inn
+erHTML = datosMostrados;
+{);
+</script>
 </body>
 </html>
-
-
