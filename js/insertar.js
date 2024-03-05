@@ -21,3 +21,15 @@ function cambiarContenido2(){
     //agrega el parrafo al div
     div.appendChild(nuevoParrafo);
 }
+
+function pedirDonas(){
+    //simular la peticion al servidor
+    const pedido="Donas azucaradas";
+
+    //crear la respuesta
+    const respuesta="Tu pedido de "+ pedido + "ha sido enviado";
+    
+    const elementosRespuesta= document.getElementById("respuesta");
+    elementosRespuesta.textContent = respuesta;
+    elementosRespuesta.style.display="block";
+}
