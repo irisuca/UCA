@@ -10,7 +10,7 @@ function cambiarContenido(){
 
     //creamos otro nodo de texto
     var nuevoParrafo=document.createElement("p");
-    nuevoParrafo.textContent="Contenido nuevo con createTextNode";
+    nuevoParrafo.textContent="Gracias por tu participación, se te mandaran mas informacion en tu correo.";
 
     //agrega el parrafo al div
     div.appendChild(nuevoParrafo);
