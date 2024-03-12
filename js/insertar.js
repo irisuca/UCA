@@ -1,4 +1,4 @@
-Function cambiarContenido(){
+function cambiarContenido(){
     var div=document.getElementById("myDiv");
     //cmodificando contenido
     div.innerHTML="<h1>Nuevo Titulo hecho con innerHTML </h1><p>Contenido nuevo con innerHTML</p>";
