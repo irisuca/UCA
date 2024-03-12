@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var users = [
         { id: 1, name: "Juan", age: 25 },
         { id: 2, name: "María", age: 30 },
-        { id: 3, name: "Pedro", age: 22 }
+        { id: 3, name: "Pedro", age: 22 },
+        { id: 4, name: "Panchita", age: 30 },
+        { id: 5, name: "Miguel", age: 27 },
+        { id: 6, name: "Xochilt", age: 26 }
     ];
 
     // Función para mostrar usuarios en la interfaz
