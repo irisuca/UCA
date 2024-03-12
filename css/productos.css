@@ -1,0 +1,24 @@
+ul {
+    display: flex; /* Activa el flexbox */
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el margen interno */
+  }
+  
+  ul li {
+    flex: 1; /* Distribuye el espacio equitativamente entre los elementos */
+  }
+
+@media (max-width: 768px){
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#respuesta {
+  display: none;
+  border: 1px solid blueviolet;
+  padding: 10px;
+  margin: 10px;
+  font-family: 16px;
+}

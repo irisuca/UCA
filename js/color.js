@@ -2,7 +2,7 @@ function cambiarContenido(){
     var div=document.getElementById("miDiv");
 
     //creamos nuevo nodo de texto
-    var nuevoTexto=document.createTextNode("Gracias por tu participación");
+    var nuevoTexto=document.createTextNode("Enviar Formulario");
     
 
     //agregamos el nodo div
