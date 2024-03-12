@@ -9,8 +9,9 @@ function cambiarContenido(){
     div.appendChild(nuevoTexto);
 
     //creamos otro nodo de texto
-    var nuevoParrafo=document.createElement("p");
+    var nuevoParrafo=document.createElement("h1");
     nuevoParrafo.textContent="Gracias por tu participación, se te mandaran mas informacion en tu correo.";
 
     //agrega el parrafo al div
     div.appendChild(nuevoParrafo);
+}
